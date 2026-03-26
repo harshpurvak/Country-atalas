@@ -1,1 +1,144 @@
 @import "tailwindcss";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.Page-Wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: cursive;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header {
+    height: 10rem;
+    box-shadow: rgba(255, 255, 255, 0) 0px 10px 10px -10px;
+    background-color: #202020;
+    width: 100%;
+
+    & container {
+        height: 10rem;
+    }
+}
+
+.navbar-grid {
+    grid-template-columns: 0.5fr 1fr;
+    padding: 0 3.2rem;
+    align-items: center;
+    height: 10rem;
+}
+
+.logo h1{
+    font-size: 15px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.2rem;
+    color: #fff;
+
+    & li a {
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+.ham-menu {
+    display: none;
+}
+
+@media screen and (max-width: 998px) {
+    .menu-web {
+        display: none;
+    }
+}
