@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import countryFacts from "../api/countryData.json"
+import CountryContext from '../context/CountryContext'
 
 
 const About = () => {
+  const { countryFacts } = useContext(CountryContext)
+
   return (
     <section className='section-about container'>
       <h2 className='container-title'>
@@ -12,24 +15,32 @@ const About = () => {
       </h2>
 
       <div className='gradient-cards'>
-        <div className='card'>
-          <div className='container-card bg-blue-box'>
-            <p className='card-title'>India</p>
-            <p>
-              <span className='card-description'>Capital:</span>
-              Delhi
-            </p>
-            <p>
-              <span className='card-description'>Population:</span>
-              142563588
-            </p>
-            <p>
-              <span className='card-description'>Interesting Facts:</span>
-              biggest democracy
-            </p>
-            
-          </div>
-        </div>
+        {
+          countryFacts.map((country) => {
+            const { id, countryName, capital, population, interestingFact } = country
+
+            return (
+              <div className='card' key={id}>
+                <div className='container-card bg-blue-box'>
+                  <p className='card-title'>{countryName}</p>
+                  <p>
+                    <span className='card-description'>capital:</span>
+                   {capital}
+                  </p>
+                  <p>
+                    <span className='card-description'>population:</span>
+                    {population}
+                  </p>
+                  <p>
+                    <span className='card-description'>interesting Fact:</span>
+                    {interestingFact}
+                  </p>
+
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
     </section>
   )

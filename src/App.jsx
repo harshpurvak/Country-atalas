@@ -5,6 +5,7 @@ import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import AppLayout from "./components/Layout/AppLayout"
 import ErrorPage from "./pages/ErrorPage"
+import { CountryProvider } from "./context/CountryContext"
 
 
 
@@ -38,8 +39,9 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    
+    <CountryProvider>
       <RouterProvider router={router}></RouterProvider>
+    </CountryProvider>
     
   )
 }
