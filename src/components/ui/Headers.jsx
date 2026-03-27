@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom'
 
 const Headers = () => {
   return (
-    <header className="header">                    {/* ✅ add this */}
+    <header className="header">                   
       <div className='grid navbar-grid'>
         <div className='logo'>
           <NavLink>
             <h1>WordAtlas</h1>
           </NavLink>
         </div>
-        <nav className="nav">                      {/* ✅ add this */}
+        <nav className="nav">                     
           <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
