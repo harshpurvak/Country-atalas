@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { NavLink, useRouteError } from 'react-router-dom'
 
 const ErrorPage = () => {
