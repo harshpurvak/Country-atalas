@@ -1,1 +1,1 @@
-Atlas webapp to understand routing through practical.
+Atlas webapp to understand routing through practical
