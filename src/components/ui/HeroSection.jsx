@@ -7,10 +7,10 @@ const HeroSection = () => {
           <div className='container grid grid-two-cols'>
             <div className='hero-content'>
               <h1 className='heading-xl'>
-                explore the world, One country at a Time
+                explore the world, One country at a Time.
               </h1>
               <p className='paragraph'>
-                discover the history, culture and beauty of every nation, Sort, Search and filter through countries so find the details you need.
+                discover the history, culture and beauty of every nation, Sort, Search and filter through countries so find the details you need
               </p>
               <button className='btn btn-darken btn-inline bg-white-box'>
                 Start Exploring <FaLongArrowAltRight />
