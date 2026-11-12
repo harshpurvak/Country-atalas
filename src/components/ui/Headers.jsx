@@ -7,7 +7,7 @@ const Headers = () => {
       <div className='grid navbar-grid'>
         <div className='logo'>
           <NavLink>
-            <h1>WordAtlas</h1>
+            <h1>World<span>Atlas<span/></h1>
           </NavLink>
         </div>
         <nav className="nav">                     
